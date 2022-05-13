@@ -5,7 +5,7 @@ import TireCard from './TireCard';
 const TireList = () => {
   return (
     <div className={styles.container}>
-        <h1 className={styles.title}> ร้านบริการซ่อม/เปลี่ยนยางรถแบบเป็นกันเอง</h1>
+        <h1 className={styles.title}> ร้านบริการซ่อม/เปลี่ยนยางรถแบบเป็นกันเอง </h1>
         <h1 className={styles.title}>🛵🚗🚜🚐</h1>
         <p className={styles.desc}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu

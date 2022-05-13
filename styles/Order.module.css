@@ -1,0 +1,137 @@
+.container {
+  height: calc(100vh - 100px);
+  padding: 50px;
+  display: flex;
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+}
+
+.table{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.row:last-child{
+    display: flex;
+    justify-content: space-around;
+}
+
+.done{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inProgress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: inProgress 1s ease infinite alternate;
+}
+
+@keyframes inProgress {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.undone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.3;
+}
+
+.undone .checkIcon,
+.inProgress .checkIcon{
+    display:none;
+}
+.wrapper {
+  width: 90%;
+  max-height: 300px;
+  background-color: #333;
+  padding: 50px;
+  padding-top: 1px;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  display: flex;
+}
+
+.totalTextTitle {
+  margin-right: 10px;
+}
+
+.button {
+  height: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: not-allowed;
+  background-color: #b7903c;
+  border: none;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trTitle {
+    display: none;
+  }
+  .tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .name,
+  .total {
+    font-size: 24px;
+  }
+  .imgContainer {
+    width: 35vw;
+    height: 35vw;
+  }
+  .price{
+    font-size: 22px;
+  }
+  .price::before{
+    content: "ราคา : ";
+    font-weight: bold;
+  }
+  .id::before{
+    content: "หมายเลขคำสั่งซื้อ : ";
+    font-weight: 400;
+  }
+  .total::before{
+    content: "รวม : ";
+    font-weight: bold;
+  }
+  .wrapper{
+    width: 100%;
+  }
+  .done,.undone,.inProgress{
+    margin-bottom: 20px;
+  }
+}

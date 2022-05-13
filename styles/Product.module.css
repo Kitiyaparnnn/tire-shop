@@ -39,6 +39,7 @@
     font-size: 20px;
     text-align: 10px;
     border-radius: 8px;
+    padding:  10px 20px;
 }
 
 .button{
@@ -47,8 +48,30 @@
     background-color:#b7903c;
     color: white;
     border: none;
-    border-radius: 8px;
     font-weight: 500;
     cursor: pointer;
 
 }
+
+@media screen and (max-width: 480px) {
+    .container{
+      height: auto;
+      text-align: center;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .imgContainer{
+        width: 70vw;
+        height: 70vw;
+        justify-content:center;
+    }
+
+    .left{
+        justify-content:center;
+    }
+
+    .quantity,.button{
+        height: 50px;
+    }
+  }

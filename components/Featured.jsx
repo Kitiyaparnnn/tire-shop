@@ -5,7 +5,7 @@ const Featured = () => {
     const [index,setIndex] = useState(0)
   const images = [
     "/image/banner.png",
-    "/image/featured2.png",
+    "/image/banner2.png",
     "/image/featured3.png",
   ];
   const handleArrow = (direction) => {
